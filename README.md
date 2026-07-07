@@ -9,8 +9,11 @@ An experimental, scalable visual encoding font-system designed to bridge the gap
 ## 💡 The Problem with Hexadecimal & High Bases
 Standard numerical systems like Hexadecimal (`Base-16`) or `Base-64` achieve high data density on the screen but fail drastically at human mental decoding. When a developer sees `3B`, they cannot instantly "see" the underlying binary structure (`00111011`) without executing arithmetic operations or mental mapping.
 
+
 ## 🚀 The Solution: Direct Visual Mapping (No Mental Math)
 **BitMatrix-Encoding** introduces a geometric, comb-like dynamic structure where characters don't just *represent* a value—they **physically draw it**. 
+
+![BitMatrix Promo](images/system16.jpg)
 
 Each glyph is split into a **4-bit block (Nibble)** represented by structural "teeth" or bars. Each prong corresponds directly to an active bit (`1`). By looking at the shape, the human eye instantly decodes the exact binary pattern without calculation.
 
