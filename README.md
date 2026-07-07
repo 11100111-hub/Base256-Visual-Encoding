@@ -119,5 +119,27 @@ When representing a full 8-bit byte (`11111111`), rendering 8 open horizontal ba
 
 ![System Scalability and Variations](images/sample.jpg)
 
+## 🛠️ Current Preview Font & Call for Contributions
+
+To demonstrate the core architecture, the provided preview font (`FiraCode-Light.ttf`) currently contains **8 initial reference glyphs** mapped to the Private Use Area (PUA) of Unicode. 
+
+You can render and test the existing experimental glyphs in your .NET environment using their exact hex addresses:
+
+```vbnet
+' Render the 8 initial preview glyphs sequentially
+TextBox1.Text = ChrW(&HE001) & ChrW(&HE002) & ChrW(&HE003) & ChrW(&HE004) &
+                ChrW(&HE005) & ChrW(&HE006) & ChrW(&HE007) & ChrW(&HE008)
+```
+Join the Project (Call for Contributors!)
+The system logic is fully defined, but the visual matrix is wide open for evolution. We are calling the global open-source community to help expand this project:
+
+Type Designers / Font Creators: Help build the full 16-nibble matrix variations (and their zero-width counterparts) using FontForge or Glyphs.
+
+Systems Engineers: Implement encoding/decoding wrappers in languages like Rust, C++, or Go to convert raw byte arrays directly into this visual matrix.
+
+Feel free to fork the repository, open an Issue, or submit a Pull Request with your glyph designs and optimizations!
+
+
+
 
 
