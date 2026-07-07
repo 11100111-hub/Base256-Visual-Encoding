@@ -38,3 +38,27 @@ Compact Financial and Data Visualization Dashboards.
 
 📄 License
 This project is licensed under the MIT License - open for community contributions and further glyph-set scaling!
+
+![BitMatrix Promo](images/system256.jpg)
+
+## 🛠️ Implementation & Architecture
+
+The project consists of two core layers:
+1. **The Vector Font Pack (`.ttf`):** Designed using FontForge, leveraging the *Private Use Area (PUA)* starting from `U+E000` to prevent any OS control character collision.
+2. **The Translation Engine (.NET):** A lightweight rendering logic that processes raw byte arrays, executes low-level bit shifting, and renders compound glyphs seamlessly.
+
+### Example C# Code Snippet:
+```csharp
+// Load the private binary font from the application folder
+PrivateFontCollection pfc = new PrivateFontCollection();
+pfc.AddFontFile("FiraCode-BitMatrix.ttf");
+
+// Set TextBox font
+txtDisplay.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
+
+// Render lower and upper nibbles in a single visual cell
+txtDisplay.Text = "\uE003" + "\uE012";
+
+
+
+
