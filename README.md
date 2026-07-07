@@ -78,4 +78,6 @@ In addition, when combining two glyphs, prongs from both characters merge into a
 * **Rule 2:** If a prong meets another prong at the same level, it **cascades (shifts) down to the next available horizontal slot**. If that slot is also full, it continues shifting down until it finds the first empty slot to settle in.
 
 *(This acts as a beautiful, real-time spatial simulation of the Binary Carry Flag and Bit-Shifting operations).*
+![BitMatrix Promo](images/Subtraction.jpg)
+
 
