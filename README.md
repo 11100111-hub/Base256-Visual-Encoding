@@ -89,4 +89,13 @@ Imagine subtracting the value `2` (`0010`) from `3` (`0011`):
 
 ![Visual Subtraction Diagram](images/Subtraction.jpg)
 
+### Visual Addition Example (As shown in the diagram below)
 
+Imagine adding the value `2` (`0010`) to `3` (`0011`):
+1. **First Glyph (`0011`):** Features two horizontal prongs (Top & Middle).
+2. **Second Glyph (`0010`):** Features one horizontal prong (Middle only).
+3. **The Operation:** The Top prong stays in place. However, the two Middle prongs collide. 
+4. **The Cascade:** Since the middle slot is full, the colliding prong cascades down (as shown by the pink arrow), bypassing any filled states until it finds the next available empty slot at the bottom.
+5. **The Result (`0101`):** The prongs are now positioned at the Top and Bottom slots, physically forming the unified glyph for `5` without any electronic ALU instruction.
+
+![Visual Addition Diagram](images/Collection.jpg)
