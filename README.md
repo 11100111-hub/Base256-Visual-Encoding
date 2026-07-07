@@ -59,6 +59,24 @@ txtDisplay.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
 // Render lower and upper nibbles in a single visual cell
 txtDisplay.Text = "\uE003" + "\uE012";
 
+## 🧮 Native Visual Arithmetic (Zero-ALU Mental Mapping)
+
+One of the most powerful features of **BitMatrix-Encoding** is that arithmetic operations (Addition & Subtraction) can be solved **completely visually** by merging or subtracting the horizontal prongs, mirroring how logical gates operate at the hardware level.
+
+### 1. Visual Subtraction (The Annihilation Principle)
+In subtraction, when two glyphs are layered or compared, overlapping prongs in the same horizontal position **annihilate (cancel) each other out**. 
+* **Rule:** If a prong on the first glyph meets a prong on the second glyph at the exact same level $\rightarrow$ both prongs disappear.
+* **Result:** The remaining, unmatched prongs form the final visual result instantly. 
+
+*(This perfectly visualizes the standard bitwise XOR/AND-NOT behaviors without manual binary conversion).*
+
+### 2. Visual Addition (The Cascading Flow Principle)
+In addition, when combining two glyphs, prongs from both characters merge into a single matrix. If two prongs occupy the same horizontal level, they invoke a "cascade" or "carry" effect:
+* **Rule 1:** If a prong moves to a slot that is **empty**, it settles there.
+* **Rule 2:** If a prong meets another prong at the same level, it **cascades (shifts) down to the next available horizontal slot**. If that slot is also full, it continues shifting down until it finds the first empty slot to settle in.
+
+*(This acts as a beautiful, real-time spatial simulation of the Binary Carry Flag and Bit-Shifting operations).*
+
 
 
 
