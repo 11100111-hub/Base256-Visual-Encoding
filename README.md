@@ -78,6 +78,15 @@ In addition, when combining two glyphs, prongs from both characters merge into a
 * **Rule 2:** If a prong meets another prong at the same level, it **cascades (shifts) down to the next available horizontal slot**. If that slot is also full, it continues shifting down until it finds the first empty slot to settle in.
 
 *(This acts as a beautiful, real-time spatial simulation of the Binary Carry Flag and Bit-Shifting operations).*
-![BitMatrix Promo](images/Subtraction.jpg)
+
+### Visual Subtraction Example (As shown in the diagram below)
+
+Imagine subtracting the value `2` (`0010`) from `3` (`0011`):
+1. **First Glyph (`0011`):** Features two horizontal prongs (Top & Middle).
+2. **Second Glyph (`0010`):** Features one horizontal prong (Middle only).
+3. **The Operation:** The overlapping Middle prong is visually canceled out.
+4. **The Result (`0001`):** Only the Top prong remains, physically forming the glyph for `1`.
+
+![Visual Subtraction Diagram](images/Subtraction.jpg)
 
 
