@@ -62,7 +62,7 @@ txtDisplay.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
 // Render lower and upper nibbles in a single visual cell
 txtDisplay.Text = "\uE003" + "\uE012";
 ```
-
+<a href="images/FiraCode-Light.ttf" download>📥 Download Preview Font</a>
 
 ## 🧮 Native Visual Arithmetic (Zero-ALU Mental Mapping)
 
